@@ -1,0 +1,24 @@
+@SoftinnHotelBooking_HostAddress = http://localhost:5155
+
+### Get all rooms
+GET {{SoftinnHotelBooking_HostAddress}}/api/rooms
+Accept: application/json
+
+###
+
+### Get all bookings
+GET {{SoftinnHotelBooking_HostAddress}}/api/bookings
+Accept: application/json
+
+###
+
+### Create a new booking
+POST {{SoftinnHotelBooking_HostAddress}}/api/bookings
+Content-Type: application/json
+
+{
+  "guestName": "John Doe",
+  "roomId": 1,
+  "checkInDate": "2025-05-01",
+  "checkOutDate": "2025-05-03"
+}
