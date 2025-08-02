@@ -1,4 +1,5 @@
-﻿using HotelBookingAPI.Models;
+﻿using HotelBookingAPI.Dtos;
+using HotelBookingAPI.Models;
 using HotelBookingAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,17 +26,18 @@ namespace HotelBookingAPI.Controllers
 
         // POST /api/bookings
         [HttpPost]
-        public async Task<IActionResult> CreateBooking([FromBody] Booking booking)
+        public async Task<ActionResult<Booking>> CreateBooking([FromBody] BookingCreateDto bookingDto)
         {
-            try
+            var booking = new Booking
             {
-                var result = await _bookingService.CreateBookingAsync(booking);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+                GuestName = bookingDto.GuestName,
+                RoomId = bookingDto.RoomId,
+                CheckInDate = bookingDto.CheckInDate,
+                CheckOutDate = bookingDto.CheckOutDate
+            };
+
+            var created = await _bookingService.CreateBookingAsync(booking);
+            return CreatedAtAction(nameof(GetBookings), new { id = created.Id }, created);
         }
     }
 }

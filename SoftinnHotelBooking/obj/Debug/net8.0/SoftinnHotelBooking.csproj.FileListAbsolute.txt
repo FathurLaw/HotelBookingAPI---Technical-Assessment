@@ -44,3 +44,5 @@ C:\Users\fathu\source\repos\SoftinnHotelBooking\SoftinnHotelBooking\obj\Debug\ne
 C:\Users\fathu\source\repos\SoftinnHotelBooking\SoftinnHotelBooking\obj\Debug\net8.0\SoftinnHotelBooking.pdb
 C:\Users\fathu\source\repos\SoftinnHotelBooking\SoftinnHotelBooking\obj\Debug\net8.0\SoftinnHotelBooking.genruntimeconfig.cache
 C:\Users\fathu\source\repos\SoftinnHotelBooking\SoftinnHotelBooking\obj\Debug\net8.0\ref\SoftinnHotelBooking.dll
+C:\Users\fathu\source\repos\SoftinnHotelBooking\SoftinnHotelBooking\obj\Debug\net8.0\SoftinnHotelBooking.sourcelink.json
+C:\Users\fathu\source\repos\SoftinnHotelBooking\SoftinnHotelBooking\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
