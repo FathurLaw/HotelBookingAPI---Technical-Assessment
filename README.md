@@ -20,3 +20,17 @@ If a user tries to book a room that's already booked for the selected date range
 ## Unit Tests
 Unit tests for booking logic are located in `HotelBookingAPI.Tests`. Run them with:
 
+## Assumptions
+- Once a room is booked, it's marked as unavailable.
+- Each room can only have one active booking at a time.
+- Bookings must have non-overlapping date ranges.
+
+## Folder Structure
+- `Controllers/` — API endpoints
+- `Services/` — Business logic
+- `Repositories/` — Data access logic
+- `Models/` — Data models
+
+## Author
+Fathur Rahman  
+[GitHub Repository](https://github.com/FathurLaw/HotelBookingAPI---Technical-Assessment)
